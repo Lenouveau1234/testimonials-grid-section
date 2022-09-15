@@ -1,0 +1,131 @@
+body{
+    background-color: hsl(210, 46%, 95%);
+}
+.container{
+    transform: translate(15%, 5%);
+    display: grid;
+    grid-template-columns: 250px 250px 215px 215px;
+    grid-template-rows:  250px  250px ;
+    gap: 20px;
+}
+/* daniel portfilio */
+.Daniel{
+    grid-column: 1/3;
+    background-color: hsl(263, 55%, 52%);
+}
+
+/* Jonathan portfilio */
+.Jonathan{
+    grid-column: 3/4;
+    background-color: hsl(217, 19%, 35%);
+}
+
+/* about Kira */
+.Kira{
+    grid-column: 4/5;
+    grid-row: 1/3;
+    background-color:white;
+}
+
+/* about Jeanette */
+.Jeanette{
+    grid-column: 1/2;
+    grid-row: 2/2;
+    background-color: white;
+}
+
+/* about Patrick */
+.Patrick{
+    background-color: hsl(219, 29%, 14%);
+    grid-column: 2/4;
+    grid-row: 2/2;
+}
+
+.attribution{
+    transform: translate(40px, 40px);
+}
+
+/* common */
+header{
+    height: 60px;
+}
+.the-name{
+    transform: translate(55px, -35px);
+    color:hsl(210, 46%, 95%);
+}
+.Verified{
+    transform: translate(55px, -50px);
+    font-size: 11px;
+    color: hsl(210, 46%, 95%, 50%);
+}
+.margin-intern{
+    margin: 10px;
+}
+.footer-color{
+    font-size: 13px;
+    color:hsl(0, 0%, 81%);
+}
+img{
+    border-radius: 50%;
+    width: 35px;
+    transform: translate(10px, 19px);
+}
+.strong-paragraph-size{
+    font-size: 19px;
+}
+.main-white{
+    color: white;
+}
+.the-name-color{
+    transform: translate(55px, -35px);
+    color: black;
+}
+.Verified-kira-janette{
+    transform: translate(55px, -50px);
+    font-size: 11px;
+    color: hsl(0%, 0%, 0%, 50%);
+}
+.footer-cooler-kira-janette{
+    font-size: 13px;
+    color: hsl(0%, 0%, 0%, 70%);
+}
+.Daniel,
+.Patrick,
+.Jeanette,
+.Kira,
+.Jonathan{
+    border-radius: 10px;
+}
+
+@media (max-width:375px){
+    .container{
+        transform: translate(35px, 10px);
+        grid-template-columns:270px;
+        grid-template-rows: 400px 250px 250px 375px 435px;
+        gap: 10px;
+    }
+    .Daniel{
+        grid-column: 1/1;
+        grid-row: 1/2;
+    }
+    .Jonathan{
+        grid-column: 1/1;
+        grid-row: 2/3;
+    }
+    .Jeanette{
+        grid-column: 1/1;
+        grid-row: 3/4;
+    }
+    .Patrick{
+        grid-column: 1/1;
+        grid-row: 4/5;
+    }
+    .Kira{
+        grid-column: 1/1;
+        grid-row: 5/6;
+    }
+    .attribution{
+        transform: translate(10px, 35px);
+    }
+
+}
